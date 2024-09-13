@@ -1,0 +1,92 @@
+// Importing from a subfolder
+// @import 'components/buttons';
+
+// Importing from a different folder
+// @import '../assets/variables';
+@import 'components/button';
+@import 'components/footer';
+
+/***********************************************
+ Please keep this css code to improve the font quality 
+***********************************************/
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   text-rendering: optimizeLegibility;
+}
+
+body {
+  font-smoothing: antialiased;
+  -moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+
+/***********************************************
+ Make sure containers never lose their center alignment 
+***********************************************/
+.container-medium, .container-small, .container-large {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/***********************************************
+ Get rid of top margin on first element in any rich text element 
+***********************************************/
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+
+/***********************************************
+ Get rid of bottom margin on last element in any rich text element 
+***********************************************/
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+  
+
+/************************************************
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+************************************************/
+
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+
+/***********************************************
+  section styles
+***********************************************/
+main section, header, footer {
+  position: relative;
+}
+
+/***********************************************
+  remove scroll bounce
+***********************************************/
+body { overscroll-behavior: none; }
+
+
+/***********************************************
+  container styles
+***********************************************/
+.w-container {
+  container-type: inline-size;
+}
+
+
+
+
+
+
