@@ -1,0 +1,60 @@
+
+// --pseudo-bg-color is grabed throught data-atribute "background-color" each case__block has defined
+.case__block{
+  position: relative;
+  &:before{
+    background-color: var(--pseudo-bg-color);
+    position: absolute;
+    right: 0px;
+    left: auto;
+    bottom: 0px;
+    top: auto;
+    height: calc(100% - 67px);
+    content: '';
+    width: var(--pseudo-width, 0%);
+    max-width: 1640px;
+    z-index: -1;
+    border-radius: 0px 96px 96px 0px;
+    @media screen and (max-width: 767px){
+      height: calc(100% - 2rem);
+      right: -1rem;
+    }
+  } 
+
+  &:nth-child(even) {
+    grid-template-columns: 1fr 2fr;
+    &:before{
+      left: 0px;
+      right: auto;
+      direction: rtl;
+      border-radius: 96px 0px 0px 96px;
+      @media screen and (max-width: 767px){
+        left: -1rem;
+      }
+    }
+    .case__block__media{
+      @media screen and (min-width: 768px){
+        order: -1;
+      }
+      &-image{
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 96px;
+      }
+    }
+  }
+
+  &:last-of-type{
+    margin-bottom: 0px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+.button[button-color="white"]{
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: var(--color--text-primary);
+  .button-arrow{
+    path {
+      stroke: var(--color--text-primary);
+    }
+  }
+  &:hover{
+    background-color: var(--swatch--secondary-300);
+    border: 1px solid var(--swatch--secondary-300);
+    color: var(--swatch--light-1);
+    .button-arrow{
+      path {
+        stroke: var(--swatch--light-1);
+      }
+    }
+  }
+}

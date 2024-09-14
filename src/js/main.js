@@ -4,7 +4,7 @@ import '../css/main.scss'
 
 // JavaScript import
 import './components/navbar.js'
-import './components/footer.js'
+import './animations/fadeFromBottom.js'
 
 
 /////////////////////////////////////////

@@ -4,7 +4,6 @@
 // Importing from a different folder
 // @import '../assets/variables';
 @import 'components/button';
-@import 'components/footer';
 
 /***********************************************
  Please keep this css code to improve the font quality 
@@ -52,18 +51,18 @@ Important: You will not be able to style for example "All Links" in Designer wit
 Uncomment this CSS to use it in the project. Leave this message for future hand-off.
 ************************************************/
 
-a,
-.w-input,
-.w-select,
-.w-tab-link,
-.w-nav-link,
-.w-dropdown-btn,
-.w-dropdown-toggle,
-.w-dropdown-link {
-  color: inherit;
-  text-decoration: inherit;
-  font-size: inherit;
-}
+//a
+// .w-input,
+// .w-select,
+// .w-tab-link,
+// .w-nav-link,
+// .w-dropdown-btn,
+// .w-dropdown-toggle,
+// .w-dropdown-link {
+//   color: inherit;
+//   text-decoration: inherit;
+//   font-size: inherit;
+// }
 
 /***********************************************
   section styles
